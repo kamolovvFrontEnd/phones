@@ -1,0 +1,121 @@
+{
+  "phones": {
+    "iphone": [
+      {
+        "image": "https://s3.eu-central-1.amazonaws.com/alifcore.storage/media/images/alifshop/6971/iphone-14-pro-256-gb-esim-esim-chernyy-1664181855290-md.webp",
+        "price": "13 800 с.",
+        "installment": "788с. х24мес",
+        "model": "iPhone 14 Pro 256 GB (eSIM+eSIM), чёрный",
+        "color": "black",
+        "firstpage": "iphone",
+        "secondpage": "14pro",
+        "brand": "Apple",
+        "memory": "256 гб",
+        "frequency": "120 Гц",
+        "ram": "6 ГБ",
+        "display": "OLED"
+      },
+      {
+        "image": "https://s3.eu-central-1.amazonaws.com/alifcore.storage/media/images/alifshop/6970/iphone-14-pro-256-gb-esim-esim-zolotistyy-1664181813145-md.webp",
+        "price": "13 700 c.",
+        "installment": "782с. х24мес",
+        "model": "iPhone 14 Pro 256 GB (eSIM+eSIM), золотистый",
+        "color": "gold",
+        "firstpage": "iphone",
+        "secondpage": "14pro",
+        "brand": "Apple",
+        "memory": "256 гб",
+        "frequency": "120 Гц",
+        "ram": "6 ГБ",
+        "display": "OLED"
+      },
+      {
+        "image": "https://s3.eu-central-1.amazonaws.com/alifcore.storage/media/images/alifshop/6969/iphone-14-pro-256-gb-esim-esim-serebristyy-1664181750700-md.webp",
+        "price": "14 417 c.",
+        "installment": "823с. х24мес",
+        "model": "iPhone 14 Pro 256 GB (eSIM+eSIM), серебристый",
+        "color": "white",
+        "firstpage": "iphone",
+        "secondpage": "14pro",
+        "brand": "Apple",
+        "memory": "256 гб",
+        "frequency": "120 Гц",
+        "ram": "6 ГБ",
+        "display": "OLED"
+      },
+      {
+        "image": "https://s3.eu-central-1.amazonaws.com/alifcore.storage/media/images/alifshop/6968/iphone-14-pro-256-gb-esim-esim-fioletovyy-1664181633528-md.webp",
+        "price": "13 800 с.",
+        "installment": "788с. х24мес",
+        "model": "iPhone 14 Pro 256 GB (eSIM+eSIM), фиолетовый",
+        "color": "violet",
+        "firstpage": "iphone",
+        "secondpage": "14pro",
+        "brand": "Apple",
+        "memory": "256 гб",
+        "frequency": "120 Гц",
+        "ram": "6 ГБ",
+        "display": "OLED"
+      }
+    ],
+
+    "samsung": [
+      {
+        "image": "https://s3.eu-central-1.amazonaws.com/alifcore.storage/media/images/alifshop/12311/samsung-galaxy-s23-ultra-12-512-gb-zelenyy-1677237011522-md.webp",
+        "price": "12 051 с.",
+        "installment": "688с. х24мес",
+        "model": "Samsung Galaxy S23 Ultra 12/512 GB, чёрный",
+        "color": "black",
+        "firstpage": "samsung",
+        "secondpage": "galaxy-s22-ultra",
+        "brand": "Samsung",
+        "memory": "256 гб",
+        "frequency": "120 Гц",
+        "ram": "12 ГБ",
+        "display": "Dynamic AMOLED 2X"
+      },
+      {
+        "image": "https://s3.eu-central-1.amazonaws.com/alifcore.storage/media/images/alifshop/4430/samsung-galaxy-s22-12-256-gb-krasnyy-1646467317891-md.webp",
+        "price": "9 599 c.",
+        "installment": "548c. / мес.",
+        "model": "Samsung Galaxy S22 Ultra 12/256 GB, красный",
+        "color": "red",
+        "firstpage": "samsung",
+        "secondpage": "galaxy-s22-ultra",
+        "brand": "Samsung",
+        "memory": "256 гб",
+        "frequency": "120 Гц",
+        "ram": "12 ГБ",
+        "display": "Dynamic AMOLED 2X"
+      },
+      {
+        "image": "https://s3.eu-central-1.amazonaws.com/alifcore.storage/media/images/alifshop/12082/samsung-galaxy-s23-ultra-12-256-gb-bezhevyy-1676379332167-md.webp",
+        "price": "10 498 c.",
+        "installment": "599c. / мес",
+        "model": "Samsung Galaxy S23 Ultra 12/256 GB, бежевый",
+        "color": "white",
+        "firstpage": "samsung",
+        "secondpage": "galaxy-s23-ultra",
+        "brand": "Samsung",
+        "memory": "256 гб",
+        "frequency": "120 Гц",
+        "ram": "12 ГБ",
+        "display": "Dynamic AMOLED 2X"
+      },
+      {
+        "image": "https://s3.eu-central-1.amazonaws.com/alifcore.storage/media/images/alifshop/10363/samsung-galaxy-s22-ultra-8-128-gb-zelenyy-1668836252016-md.webp",
+        "price": "9 500 c.",
+        "installment": "542c. / мес.",
+        "model": "Samsung Galaxy S22 Ultra 8/128 GB, зеленый",
+        "color": "green",
+        "firstpage": "samsung",
+        "secondpage": "galaxy-s22-ultra",
+        "brand": "Samsung",
+        "memory": "256 гб",
+        "frequency": "120 Гц",
+        "ram": "12 ГБ",
+        "display": "Dynamic AMOLED 2X"
+      }
+    ]
+  }
+}

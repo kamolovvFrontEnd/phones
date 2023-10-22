@@ -1,0 +1,68 @@
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.card {
+  max-width: 22.5rem;
+  margin: 25px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grey {
+  color: rgba(60, 58, 58, 0.5);
+}
+
+.indent {
+  padding: 3.125rem 10rem;
+}
+
+.characteristic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.img-size {
+  height: 400px;
+  width: 300px;
+}
+
+span {
+  color: rgba(60, 58, 58, 0.5);
+}
+
+.inOneLine {
+  text-align: start;
+  margin-top: 15px;
+}
+
+.back {
+  border: 2px black solid;
+  border-radius: 10px;
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.back:hover{
+  text-decoration: underline;
+}
