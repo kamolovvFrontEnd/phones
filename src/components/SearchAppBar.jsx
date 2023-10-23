@@ -1,63 +1,20 @@
 import React, { useState } from "react";
-import { styled, alpha } from "@mui/material/styles";
+import {NavLink} from 'react-router-dom'
 import {
   AppBar,
   Box,
   Toolbar,
   Typography,
-  InputBase,
   Button,
   List,
   ListItem,
   ListItemButton,
   Drawer,
 } from "@mui/material";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Menu from "@mui/icons-material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
 
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(1),
-    width: "auto",
-  },
-}));
-
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("sm")]: {
-      width: "12ch",
-      "&:focus": {
-        width: "20ch",
-      },
-    },
-  },
-}));
-
-function SearchAppBar({ data, setData }) {
+function SearchAppBar() {
   const [state, setState] = useState({
     left: false,
   });
@@ -127,17 +84,14 @@ function SearchAppBar({ data, setData }) {
           >
             MUI
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-              onChange={(event) => setData(event.target.value)}
-              value={data}
-            />
-          </Search>
+          <Button
+            component={NavLink}
+            to={"/cart"}
+            size="small"
+            color="inherit"
+          >
+            <ShoppingCartOutlinedIcon />
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>

@@ -5,12 +5,14 @@ import "./Card.css";
 import AboutPhoneModel from "./AboutPhoneModel";
 import AllProducts from "./AllProducts";
 import AppBar from "./SearchAppBar";
+import Cart from "./Cart";
+import { setIphoneCards, setSamsungCards } from "./store/reducer/cartReducer";
+import { useDispatch, useSelector } from "react-redux";
+import { useCartSelector } from "./hooks/useSelector";
 
 function Cards() {
-  const [iphoneCards, setIphoneCards] = useState([]);
-  const [samsungCards, setSamsungCards] = useState([]);
-  const [data, setData] = useState("");
-  const [searchData, setSearchData] = useState([]);
+  const { iphoneCards, samsungCards } = useCartSelector();
+  const dispatch = useDispatch();
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -18,8 +20,8 @@ function Cards() {
       try {
         const responce = await fetch("http://localhost:3001/phones");
         const card = await responce.json();
-        setIphoneCards(card.iphone);
-        setSamsungCards(card.samsung);
+        dispatch(setIphoneCards(card.iphone));
+        dispatch(setSamsungCards(card.samsung));
       } catch (error) {
         setError(error.message);
       }
@@ -27,23 +29,10 @@ function Cards() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    const searchResult = iphoneCards.filter((el) =>
-      el.model.toLowerCasse().includes(data)
-    );
-    console.log(searchData);
-    setSearchData(searchResult)
-  }, [data]);
-
-
-  console.log(data)
   return (
     <div className="container">
-      <AppBar data={data} setData={setData} />
-
-      <hr />
-
       <BrowserRouter>
+        <AppBar />
         <Link to="../" relative="path" className="back">
           Back
         </Link>
@@ -72,6 +61,7 @@ function Cards() {
               />
             );
           })}
+          <Route path="/cart" element={<Cart />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
